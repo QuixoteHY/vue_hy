@@ -9,6 +9,10 @@ module.exports = {
     app: './src/index.js',
     print: './src/print.js'
   },
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist'
+  },
   plugins: [
 //    new CleanWebpackPlugin(['dist']),  //老版本
     new CleanWebpackPlugin(),
@@ -19,6 +23,7 @@ module.exports = {
   output: {
 //    filename: 'bundle.js',
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/'
   }
 };
