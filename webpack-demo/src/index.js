@@ -2,6 +2,7 @@ import _ from 'lodash';
 //import printMe from './print.js';
 //import './styles.css';
 import { cube } from './math.js';
+//import Print from './print3';
 
 if (process.env.NODE_ENV !== 'production') {
   console.log('Looks like we are in development mode!');
@@ -22,6 +23,8 @@ function component() {
     'Hello webpack!',
     '5 cubed is equal to ' + cube(5)
   ].join('\n\n');
+
+//  element.onclick = Print.bind(null, 'Hello webpack!');
 
   return element;
 }

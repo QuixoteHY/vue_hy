@@ -11,7 +11,12 @@ module.exports = merge(common, {
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production')
-    })
+    }),
+    new webpack.HashedModuleIdsPlugin(),
+//webpack.optimize.CommonsChunkPlugin has been removed, please use config.optimization.splitChunks instead.
+//    new webpack.optimize.CommonsChunkPlugin({
+//      name: 'manifest'
+//    })
   ],
   module: {
     rules: [
