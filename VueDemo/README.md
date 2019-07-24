@@ -5,6 +5,7 @@
 ## Build Setup
 
 ``` bash
+# --registry=https://registry.npm.taobao.org
 # install dependencies
 npm install
 
