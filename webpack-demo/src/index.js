@@ -1,4 +1,4 @@
-//import _ from 'lodash';
+import _ from 'lodash';
 //import printMe from './print.js';
 //import './styles.css';
 import { cube } from './math.js';
@@ -39,3 +39,20 @@ if (module.hot) {
     document.body.appendChild(element);
   })
 }
+
+
+
+//function getComponent() {
+//  return import(/* webpackChunkName: "lodash" */ 'lodash').then(_ => {
+//    var element = document.createElement('div');
+//
+//    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+//
+//    return element;
+//
+//  }).catch(error => 'An error occurred while loading the component');
+//}
+//
+//getComponent().then(component => {
+//  document.body.appendChild(component);
+//})
