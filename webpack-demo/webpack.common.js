@@ -5,7 +5,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: './src/index.js'
+//    app: './src/index.js'
+    app: './src/index2.js'
   },
   plugins: [
 //    new CleanWebpackPlugin(['dist']),
