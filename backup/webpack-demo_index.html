@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--<title>起步</title>-->
+    <!--<title>资源管理</title>-->
+    <title>管理输出</title>
+    <script src="./print.bundle.js"></script>
+    <!--<script src="https://unpkg.com/lodash@4.16.6"></script>-->
+  </head>
+  <body>
+    <!--<script src="./src/index.js"></script>-->
+    <!--<script src="main.js"></script>-->
+    <!--<script src="bundle.js"></script>-->
+    <!--<script src="bundles/bundle_xml.js"></script>-->
+
+    <script src="./app.bundle.js"></script>
+
+  </body>
+</html>
+
+<!--npx webpack-->
+<!--npx webpack --config webpack.config.js-->
+
+<!--
+npm run build
+npm run watch
+npm start
+npm run server
+-->
+
+
+<!--
+
+mkdir webpack-demo && cd webpack-demo
+
+npm init -y
+npm install webpack webpack-cli --save-dev
+
+npm install --save lodash
+
+npm install --save-dev style-loader css-loader
+npm install --save-dev style-loader css-loader
+
+npm install --save-dev file-loader
+
+npm install --save-dev csv-loader xml-loader
+
+npm install --save-dev html-webpack-plugin
+
+npm install clean-webpack-plugin --save-dev
+
+npm install --save-dev webpack-dev-server
+
+npm install --save-dev express webpack-dev-middleware
+
+npm install --save-dev webpack-merge
+
+npm install --save uglifyjs-webpack-plugin
+npm install --save babel-preset-es2015
+npm install --save babel-loader babel-core
+
+npm uninstall babel-loader
+npm install --save babel-loader@7
+npm install --save babel-core
+
+npm install --save-dev babel-preset-es2015
+npm install --save-dev babel-loader babel-core
+
+-->
+
+
+<!--【解决】ERROR in xxx.js from UglifyJs
+
+ERROR in app.bundle.js from UglifyJs
+Unexpected token: name «src_element», expected: punc «;» [app.bundle.js:130,4]
+
+解决方法
+解决方法很简单，加入babel-preset-es2015插件即可
+1、安装依赖包
+
+$ npm install --save-div babel-preset-es2015
+ps：babel-loader、babel-core应该是默认装好的，如果没有安装，请重新安装
+
+2、修改【webpack.config.js】配置文件
+找到 /\.js$/的rules，进行修改
+
+      {
+        test: /\.js$/,
+        use: [{
+          loader: 'babel-loader',
+          options: {
+             presets: ['es2015']
+          }
+        }]
+      }
+3、根目录下添加【.babelrc】文件
+文件内容：
+
+{
+  "presets": ["es2015"]
+}
+重试
+重新运行打包脚本查看效果，指令视情况而定
+
+$ npm run build
+-->
+
